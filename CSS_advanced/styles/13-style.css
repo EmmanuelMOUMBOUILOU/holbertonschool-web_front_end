@@ -1,0 +1,24 @@
+/* 13. Pseudo Classes */
+
+@import url('12-style.css');
+
+/* Liens avec href uniquement */
+a[href] {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+/* Visited : texte italique */
+a[href]:visited {
+  font-style: italic;
+}
+
+/* Hover : souligné */
+a[href]:hover {
+  text-decoration: underline;
+}
+
+/* Active : fond color-light-grey */
+a[href]:active {
+  background-color: var(--color-light-grey);
+}
