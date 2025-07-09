@@ -1,0 +1,14 @@
+/* 10. Centering the section titles */
+
+@import url('9-style.css');
+
+:root {
+  --section-header-align: center;
+}
+
+/* Section header centré */
+.section-header {
+  text-align: var(--section-header-align);
+}
+
+/* .section-tagline doit rester dans styles précédents */
