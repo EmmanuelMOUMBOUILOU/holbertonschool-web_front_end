@@ -1,0 +1,10 @@
+/* 15. Add universal box-sizing */
+
+@import url('14-style.css');
+
+/* Universal box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Ensuite la déclaration html (importée via 14-style.css) */
