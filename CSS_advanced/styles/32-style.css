@@ -1,0 +1,33 @@
+/* This file contains CSS transitions for various elements */
+
+:root {
+  --transition-duration: 0.3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Transform scale up on card-image hover */
+.card-work:hover .card-image {
+  transform: scale(1.2);
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Transform scale down on card-outer hover */
+.card-work:hover .card-outer {
+  transform: scale(0.95);
+}
+
+/* Transition on nav-link::before */
+.nav .nav-link::before {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
+
+/* Button hover transition */
+.button:hover {
+  transition-duration: var(--transition-duration);
+  transition-property: color, background-color;
+}
+
+/* Transition on card-inner */
+.card-work .card-inner {
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
+}
