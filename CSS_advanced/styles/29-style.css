@@ -1,9 +1,17 @@
-/* 29. Styling and custom properties for the nav */
+/* Task 29: Styling and custom properties for the nav */
 
 :root {
+  --color-white: #fff;
+  --color-primary: #ff6565;
   --nav-item-link-hover: var(--color-white);
 }
 
+/* Base nav link hover color */
+.nav-link:hover {
+  color: var(--nav-item-link-hover);
+}
+
+/* Before pseudo-element on nav links */
 nav .nav-link::before {
   content: "";
   position: absolute;
@@ -12,9 +20,9 @@ nav .nav-link::before {
   background-color: var(--color-white);
   width: 0;
   height: 20%;
-  transition: width 0.3s ease;
 }
 
+/* When nav-item is hovered, style the nav-link::before */
 nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary);
   width: 100%;
