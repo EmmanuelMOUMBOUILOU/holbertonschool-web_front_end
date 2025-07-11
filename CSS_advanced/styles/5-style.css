@@ -2,8 +2,6 @@
 
 @import url('4-style.css');
 
-/* Task 5: Variables for font size */
-
 :root {
   --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
