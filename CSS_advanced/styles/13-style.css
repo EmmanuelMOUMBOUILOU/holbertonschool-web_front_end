@@ -4,8 +4,8 @@
 
 /* Liens avec href uniquement */
 a[href] {
+  color: inherit;
   text-decoration: none;
-  color: var(--text-color);
 }
 
 /* Visited : texte italique */
